@@ -16,7 +16,7 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "..../shop",
-  "scope": "..../shop",
+  "start_url": "https://d2karmy.netlify.app/shop",
+  "scope": "https://d2karmy.netlify.app/shop",
   "orientation": "portrait-primary"
 }
