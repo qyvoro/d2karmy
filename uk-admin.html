@@ -6,6 +6,10 @@
   <title>D2K Store Admin</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
+  <meta name="robots" content="index, follow">
+  
   <style>
     :root {
     --primary: #3B82F6;   
@@ -238,19 +242,19 @@
         <span class="close-modal" onclick="closeModal()">×</span>
         <form id="productForm">
           <h2 id="formTitle"><i class="fas fa-plus"></i> Add Product</h2>
-          <input type="hidden" name="ID" id="productID" />
-          <input type="hidden" name="action" id="formAction" value="add" />
-          <input type="text" name="Category" placeholder="Category" required />
-          <input type="text" name="Title" placeholder="Title" required />
+          <input type="hidden" name="ID" id="productID">
+          <input type="hidden" name="action" id="formAction" value="add">
+          <input type="text" name="Category" placeholder="Category" required>
+          <input type="text" name="Title" placeholder="Title" required>
           <textarea name="Description" placeholder="Description" required></textarea>
-          <input type="number" step="0.01" name="OriginalPrice" placeholder="Original Price (INR)" required min="0" />
-          <input type="number" step="0.01" name="DiscountedPrice" placeholder="Discounted Price (INR)" min="0" />
-          <input type="url" name="PurchaseLink" placeholder="Purchase Link" required />
-          <input type="text" name="Keywords" placeholder="Keywords (comma-separated)" required />
+          <input type="number" step="0.01" name="OriginalPrice" placeholder="Original Price (INR)" required min="0">
+          <input type="number" step="0.01" name="DiscountedPrice" placeholder="Discounted Price (INR)" min="0">
+          <input type="url" name="PurchaseLink" placeholder="Purchase Link" required>
+          <input type="text" name="Keywords" placeholder="Keywords (comma-separated)" required>
           <textarea name="Features" placeholder="Features (one per line)"></textarea>
           <label>Upload Image (leave blank to keep existing):</label>
-          <input type="file" name="image" id="image" accept="image/*" />
-          <input type="hidden" name="ImageURLs" id="existingImageURLs" />
+          <input type="file" name="image" id="image" accept="image/*">
+          <input type="hidden" name="ImageURLs" id="existingImageURLs">
           <button type="submit"><i class="fas fa-save"></i> Submit</button>
           <button type="button" class="cancel-btn" onclick="closeModal()"><i class="fas fa-times"></i> Cancel</button>
           <div class="status" id="status"></div>
@@ -261,7 +265,7 @@
       <div class="modal-content">
         <span class="close-modal" onclick="closePasswordModal()">×</span>
         <h2>Enter Admin Password</h2>
-        <input type="password" id="adminPassword" placeholder="Password" required />
+        <input type="password" id="adminPassword" placeholder="Password" required>
         <button onclick="savePassword()">Submit</button>
         <div class="status" id="passwordStatus"></div>
       </div>
@@ -271,7 +275,7 @@
         <span class="close-modal" onclick="closePasswordChangeModal()">×</span>
         <h2>Change Password</h2>
         <p>Current Password: <span id="currentPasswordDisplay"></span></p>
-        <input type="password" id="newPassword" placeholder="New Password" required />
+        <input type="password" id="newPassword" placeholder="New Password" required>
         <button onclick="changePassword()">Save</button>
         <div class="status" id="passwordChangeStatus"></div>
       </div>
@@ -285,7 +289,7 @@
       </div>
     </div>
     <div id="loading" class="loader" style="display: block;"></div>
-    <section id="productsList"></section>
+    <div id="productsList"></div> 
   </div>
   <script>
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz-gJTI2VPDNsWdKP_-kBJvDY2YHTHz5V1fmh0dV0e1UW8cbX8i9E1SWtdusGZFJ2ze/exec";
