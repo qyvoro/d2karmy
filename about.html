@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About D2K ARMY – Malayalam Free Fire Channel</title>
+  <meta name="description" content="Learn about D2K ARMY, Kerala’s top Malayalam Free Fire gaming channel with 557K+ subscribers and 82M+ views. Discover our journey, mission, and passion for gaming.">
+  <meta name="keywords" content="D2K ARMY, Malayalam gaming, Free Fire Kerala, gaming channel, about D2K, Free Fire short films, gaming community">
+  <meta property="og:title" content="About D2K ARMY – Malayalam Free Fire Gaming Channel"/>
+  <meta property="og:description" content="Discover the story behind D2K ARMY, Kerala’s leading Malayalam Free Fire channel with 557K+ subscribers and 82M+ views."/>
+  <meta property="og:image" content="https://d2karmy.netlify.app/static/images/logo.jpg"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "D2K ARMY",
+    "url": "https://d2karmy.netlify.app",
+    "sameAs": [
+      "https://youtube.com/@d2karmy7",
+      "https://instagram.com/d2k_army7",
+      "https://www.facebook.com/share/16UxYM1Siw/"
+    ]
+  }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700&display=swap');
+
+    :root {
+      /* Default theme (dark) */
+      --bg-primary: #1a1a1a;
+      --text-primary: #ffffff;
+      --header-bg: #111827;
+      --footer-bg: #111827;
+      --section-bg-dark: #1f2937;
+      --section-bg-light: #111827;
+      --text-secondary: #d1d5db;
+      --border-color: #1f2937;
+      --gradient-start: #10b981;
+      --gradient-end: #3b82f6;
+      --btn-bg: #9333ea;
+      --btn-hover: #7e22ce;
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f3f4f6;
+      --text-primary: #1f2937;
+      --header-bg: #ffffff;
+      --footer-bg: #ffffff;
+      --section-bg-dark: #e5e7eb;
+      --section-bg-light: #ffffff;
+      --text-secondary: #4b5563;
+      --border-color: #d1d5db;
+      --gradient-start: #059669;
+      --gradient-end: #2563eb;
+      --btn-bg: #9333ea;
+      --btn-hover: #7e22ce;
+    }
+
+    [data-theme="gaming"] {
+      --bg-primary: #0a0e1c;
+      --text-primary: #e0e0ff;
+      --header-bg: #1c1f3a;
+      --footer-bg: #1c1f3a;
+      --section-bg-dark: #2a2e5a;
+      --section-bg-light: #1c1f3a;
+      --text-secondary: #b0b0ff;
+      --border-color: #ff007a;
+      --gradient-start: #ff007a;
+      --gradient-end: #00ffea;
+      --btn-bg: #ff007a;
+      --btn-hover: #e6006b;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .btn-gaming {
+      background-color: var(--btn-bg);
+      transition: background-color 0.3s ease;
+    }
+    .btn-gaming:hover {
+      background-color: var(--btn-hover);
+    }
+    .logo-img {
+      height: 40px;
+      width: auto;
+      border-radius: 50%;
+    }
+
+    header, footer, #sidebar {
+      background-color: var(--header-bg);
+    }
+    footer {
+      border-top-color: var(--border-color);
+    }
+    header {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      height: 320px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #sidebar-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 40;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    #sidebar-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    #sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 80%;
+      max-width: 320px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 50;
+    }
+    #sidebar.active {
+      transform: translateX(0);
+    }
+
+    .bg-gray-800 {
+      background-color: var(--section-bg-dark);
+    }
+    .bg-gray-900 {
+      background-color: var(--section-bg-light);
+    }
+    .text-gray-300 {
+      color: var(--text-secondary);
+    }
+    .border-gray-800 {
+      border-color: var(--border-color);
+    }
+
+    @media (max-width: 768px) {
+      .grid-cols-2, .grid-cols-3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      .hero-section {
+        height: 256px;
+      }
+      .hero-section h1 {
+        font-size: 2.25rem;
+      }
+      .hero-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <!-- Header -->
+  <header class="shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="./">
+            <img src="./static/images/logo.jpg" alt="D2K ARMY Logo" class="logo-img">
+            <span class="sr-only gradient-text">D2K ARMY</span>
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="./" class="text-gray-300 hover:text-green-400">Home</a>
+          <a href="./shop" class="text-gray-300 hover:text-green-400">Shop</a>
+          <a href="#" class="text-gray-300 hover:text-green-400">About</a>
+          <a href="./contact" class="text-gray-300 hover:text-green-400">Contact</a>
+          <span id="current-theme" class="text-gray-300 text-sm capitalize"></span>
+        </div>
+        <div class="flex items-center">
+          <button id="sidebar-toggle" class="p-2 text-gray-300 hover:text-white" aria-label="Toggle Sidebar">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar with Overlay -->
+  <div id="sidebar-overlay" class="">
+    <div id="sidebar" class="p-6">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-lg font-semibold">D2K ARMY</h3>
+        <button id="sidebar-close" class="text-gray-300 hover:text-white" aria-label="Close Sidebar">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="space-y-4">
+        <a href="./" class="block text-gray-300 hover:text-green-400">Home</a>
+        <a href="./shop" class="block text-gray-300 hover:text-green-400">Shop</a>
+        <a href="#" class="block text-gray-300 hover:text-green-400">About</a>
+        <a href="./contact" class="block text-gray-300 hover:text-green-400">Contact</a>
+      </nav>
+      <div class="mt-6">
+        <label for="theme-select" class="block text-gray-300 mb-2">Select Theme</label>
+        <select id="theme-select" class="w-full p-2 bg-gray-800 text-white rounded-lg">
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+          <option value="gaming">Gaming</option>
+        </select>
+      </div>
+      <div class="mt-6">
+        <h4 class="text-gray-300 mb-2">Connect</h4>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/share/16UxYM1Siw/" class="text-gray-300 hover:text-purple-400"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://youtube.com/@d2karmy7" class="text-gray-300 hover:text-purple-400"><i class="fab fa-youtube"></i></a>
+          <a href="https://instagram.com/d2k_army7" class="text-gray-300 hover:text-purple-400"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="relative hero-section" style="background-image: url('./static/images/hero.png');">
+      <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+        <div class="text-center text-white px-4">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">About D2K ARMY</h1>
+          <p class="text-xl md:text-2xl mb-8">The story behind Kerala’s top Malayalam Free Fire gaming channel.</p>
+          <a href="https://youtube.com/@d2karmy7" class="px-6 py-3 rounded-lg text-white font-medium btn-gaming">Join Us on YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-12 bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-green-400 mb-6">Our Story</h2>
+        <p class="text-gray-300 mb-4">Founded in September 2019 in Kannur, Kerala, D2K ARMY started as a passion project to bring high-energy Free Fire content to the Malayalam-speaking gaming community. From humble beginnings, we’ve grown into a powerhouse with over 557K subscribers and 82M+ views, delivering top-tier gameplay, cinematic short films, live streams, and pro-level tips.</p>
+        <p class="text-gray-300 mb-8">Our name, D2K ARMY, stands for "Dare to Kill," embodying the fearless spirit of our community. We’re not just a channel—we’re a movement inspiring gamers to push their limits and have fun while doing it.</p>
+      </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="py-12 bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-green-400 mb-6">Our Mission</h2>
+        <p class="text-gray-300 mb-4">At D2K ARMY, our mission is simple: to entertain, inspire, and unite the Malayalam gaming community through epic Free Fire content. We aim to deliver engaging gameplay, creative short films, and actionable tips that elevate your gaming experience.</p>
+        <p class="text-gray-300 mb-8">Whether you’re a casual player or a competitive pro, we’re here to fuel your passion for gaming and help you #DARETOKILL in style.</p>
+      </div>
+    </section>
+
+    <!-- Milestones -->
+    <section class="py-12 bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-green-400 mb-6">Our Milestones</h2>
+        <div class="grid grid-cols-2 gap-8">
+          <div class="text-center">
+            <h3 class="text-xl font-semibold text-white mb-2">September 2019</h3>
+            <p class="text-gray-300 mb-4">D2K ARMY was launched, bringing Malayalam Free Fire content to YouTube.</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-semibold text-white mb-2">2021</h3>
+            <p class="text-gray-300 mb-4">Hit 100K subscribers, marking our first major milestone.</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-semibold text-white mb-2">2023</h3>
+            <p class="text-gray-300 mb-4">Surpassed 500K subscribers and 50M views, solidifying our place as Kerala’s top gaming channel.</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-semibold text-white mb-2">Today</h3>
+            <p class="text-gray-300 mb-4">Over 557K subscribers and 82M+ views, with a thriving community of gamers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect With Us -->
+    <section class="py-12 bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-green-400 mb-6">Connect With Us</h2>
+        <div class="grid grid-cols-3 gap-8">
+          <div class="text-center">
+            <i class="fab fa-youtube text-4xl text-red-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">YouTube</h3>
+            <p class="text-gray-300 mb-4">Join 557K+ subscribers for daily Free Fire content.</p>
+            <a href="https://youtube.com/@d2karmy7" class="text-purple-400 hover:text-purple-300">Subscribe</a>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-instagram text-4xl text-pink-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Instagram</h3>
+            <p class="text-gray-300 mb-4">Follow @d2k_army7 for behind-the-scenes and Shorts.</p>
+            <a href="https://instagram.com/d2k_army7" class="text-purple-400 hover:text-purple-300">Follow</a>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-facebook text-4xl text-blue-600 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Facebook</h3>
+            <p class="text-gray-300 mb-4">Stay updated with events and giveaways.</p>
+            <a href="https://www.facebook.com/share/16UxYM1Siw/" class="text-purple-400 hover:text-purple-300">Like</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold text-green-400 mb-4">D2K ARMY</h3>
+          <p class="text-gray-300">Kerala’s gateway to Malayalam gaming greatness.</p>
+          <p class="text-gray-300 mt-2">Business Inquiries: d2karmy@gmail.com</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-green-400 mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="./" class="text-gray-300 hover:text-purple-400">Home</a></li>
+            <li><a href="./shop" class="text-gray-300 hover:text-purple-400">Shop</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-purple-400">About</a></li>
+            <li><a href="./contact" class="text-gray-300 hover:text-purple-400">Contact</a></li>
+            <li><a href="./privacy-policy" class="text-gray-300 hover:text-purple-400">Privacy</a></li>
+            <li><a href="./faq" class="text-gray-300 hover:text-purple-400">FAQ</a></li>
+            <li><a href="./terms" class="text-gray-300 hover:text-purple-400">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-green-400 mb-4">Connect</h3>
+          <div class="flex space-x-4 mt-4">
+            <a href="https://www.facebook.com/share/16UxYM1Siw/" class="text-gray-300 hover:text-purple-400"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@d2karmy7" class="text-gray-300 hover:text-purple-400"><i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com/d2k_army7" class="text-gray-300 hover:text-purple-400"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t text-center text-gray-400 text-sm">
+        <p>© <span id="current-year"></span> D2K ARMY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebarToggle = document.getElementById('sidebar-toggle');
+      const sidebarClose = document.getElementById('sidebar-close');
+      const sidebarOverlay = document.getElementById('sidebar-overlay');
+      const sidebar = document.getElementById('sidebar');
+      const themeSelect = document.getElementById('theme-select');
+      const currentThemeDisplay = document.getElementById('current-theme');
+      const currentYear = document.getElementById('current-year');
+
+      // Set current year
+      currentYear.textContent = new Date().getFullYear();
+
+      // Sidebar toggle functionality
+      const toggleSidebar = () => {
+        sidebarOverlay.classList.toggle('active');
+        sidebar.classList.toggle('active');
+      };
+      sidebarToggle.addEventListener('click', toggleSidebar);
+      sidebarClose.addEventListener('click', toggleSidebar);
+      sidebarOverlay.addEventListener('click', (e) => {
+        if (e.target === sidebarOverlay) toggleSidebar();
+      });
+
+      // Theme management
+      const applyTheme = (theme) => {
+        document.body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        if (currentThemeDisplay) currentThemeDisplay.textContent = theme;
+      };
+
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      applyTheme(savedTheme);
+      themeSelect.value = savedTheme;
+
+      themeSelect.addEventListener('change', (e) => {
+        applyTheme(e.target.value);
+      });
+    });
+  </script>
+</body>
+</html>
